@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/url"
 
-	stripe "github.com/stripe/stripe-go"
+	stripe "github.com/siriele/stripe-go"
 )
 
 const (

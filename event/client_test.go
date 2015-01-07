@@ -3,8 +3,8 @@ package event
 import (
 	"testing"
 
-	stripe "github.com/stripe/stripe-go"
-	. "github.com/stripe/stripe-go/utils"
+	stripe "github.com/siriele/stripe-go"
+	. "github.com/siriele/stripe-go/utils"
 )
 
 func init() {

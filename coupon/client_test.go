@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	stripe "github.com/stripe/stripe-go"
-	"github.com/stripe/stripe-go/currency"
-	. "github.com/stripe/stripe-go/utils"
+	stripe "github.com/siriele/stripe-go"
+	"github.com/siriele/stripe-go/currency"
+	. "github.com/siriele/stripe-go/utils"
 )
 
 func init() {

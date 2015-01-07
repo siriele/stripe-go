@@ -3,12 +3,12 @@ package charge
 import (
 	"testing"
 
-	stripe "github.com/stripe/stripe-go"
-	"github.com/stripe/stripe-go/currency"
-	"github.com/stripe/stripe-go/customer"
-	"github.com/stripe/stripe-go/refund"
-	"github.com/stripe/stripe-go/token"
-	. "github.com/stripe/stripe-go/utils"
+	stripe "github.com/siriele/stripe-go"
+	"github.com/siriele/stripe-go/currency"
+	"github.com/siriele/stripe-go/customer"
+	"github.com/siriele/stripe-go/refund"
+	"github.com/siriele/stripe-go/token"
+	. "github.com/siriele/stripe-go/utils"
 )
 
 func init() {

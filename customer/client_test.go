@@ -3,10 +3,10 @@ package customer
 import (
 	"testing"
 
-	stripe "github.com/stripe/stripe-go"
-	"github.com/stripe/stripe-go/coupon"
-	"github.com/stripe/stripe-go/discount"
-	. "github.com/stripe/stripe-go/utils"
+	stripe "github.com/siriele/stripe-go"
+	"github.com/siriele/stripe-go/coupon"
+	"github.com/siriele/stripe-go/discount"
+	. "github.com/siriele/stripe-go/utils"
 )
 
 func init() {
