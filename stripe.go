@@ -65,7 +65,7 @@ type StripeBackends struct {
 var Key string
 
 var debug bool
-var httpClient = &http.Client{Timeout: defaultHTTPTimeout}
+var httpClient = &http.Client{}
 var backends StripeBackends
 
 // SetHTTPClient overrides the default HTTP client.
