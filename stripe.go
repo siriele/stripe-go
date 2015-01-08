@@ -65,7 +65,7 @@ type StripeBackends struct {
 var Key string
 
 var debug bool
-var httpClient = &http.Client{}
+var httpClient *http.Client
 var backends StripeBackends
 
 // SetHTTPClient overrides the default HTTP client.
@@ -186,7 +186,7 @@ func (s *BackendConfiguration) Do(req *http.Request, v interface{}) error {
 	log.Printf("Requesting %v %v%v\n", req.Method, req.URL.Host, req.URL.Path)
 	start := time.Now()
 
-	res, err := s.HTTPClient.Do(req)
+	res, err := httpClient.Do(req)
 
 	if debug {
 		log.Printf("Completed in %v\n", time.Since(start))

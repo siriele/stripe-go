@@ -95,7 +95,6 @@ func (a *API) Init(key string, backends *StripeBackends) {
 	if backends == nil {
 		backends = &StripeBackends{GetBackend(APIBackend), GetBackend(UploadsBackend)}
 	}
-
 	a.Charges = &charge.Client{B: backends.API, Key: key}
 	a.Customers = &customer.Client{B: backends.API, Key: key}
 	a.Cards = &card.Client{B: backends.API, Key: key}
